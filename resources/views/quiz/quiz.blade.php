@@ -44,12 +44,15 @@ var_dump($correct);
         //     console.log("good");
         // });
         console.log("x");
-        console.log(x);
+
 
         var i;
         for(i=6;i<=9;i++){
           console.log(x[i]);
-          console.log(x.cellIndex)
+          if(console.log(x[i])===answer){
+            this.addEventListener( 'click' , function(){
+            console.log("good");
+          }
         }
 
         console.log(answer);
