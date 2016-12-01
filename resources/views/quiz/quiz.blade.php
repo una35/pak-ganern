@@ -8,14 +8,20 @@ function h($s) {
 }
 
 $data = [$quiz->answer1, $quiz->answer2, $quiz->answer3, $quiz->answer4];
-$correct=$data[0];
+$correct='<li id="quiz">' . $data[0] . '</li>';
 
 shuffle($data);
 
+//var_dump($correct);
 
-var_dump($correct);
-//
 ?>
+
+    <div class="row">
+      <div class="col-sm-offset-4 col-sm-4">
+
+      </div>
+
+    </div>
 
     <div class="row">
         <div class="col-sm-offset-4 col-sm-4">
@@ -26,36 +32,54 @@ var_dump($correct);
                 <li id="quiz"><?= h($a); ?></li>
                <?php endforeach; ?>
             </ul>
-        <div id="btn" class="disabled">NEXT</div>
         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-offset-5 col-sm-2">
+            <h2 id="result"></h2>
+        </div>
+        <div class="col-sm-offset-1 col-sm-2">
+            <a href="/quiz"><div id="btn" class="disabled">NEXT</div></a>
+        </div>
+
+
     </div>
 
 <script>
     (function(){
         'use strict';
 
-         var answer = <?php echo json_encode($correct, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT); ?>;
+         var answer = String(<?php echo json_encode($correct, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT); ?>);
          console.log(answer);
+         console.log(typeof answer);
 
-        var quiz = document.getElementById('quiz');
         var x = document.getElementsByTagName('li');
-
-        // answer.addEventListener( 'click' , function(){
-        //     console.log("good");
-        // });
-        console.log("x");
-
-
+        var count;
         var i;
-        for(i=6;i<=9;i++){
-          console.log(x[i]);
-          if(console.log(x[i])===answer){
-            this.addEventListener( 'click' , function(){
-            console.log("good");
-          }
-        }
+        var quiz = document.getElementById('quiz');
+        var result = document.getElementById('result');
 
-        console.log(answer);
+        for(i=6;i<=10;i++){
+          var target = x[i].outerHTML;
+          if(target==answer){
+             x[i].addEventListener( 'click' , function(){
+                    console.log("good");
+                    // var yeah = document.createElement('h2');
+                    // text = document.createTextNode("good");
+                    // document.body.appendChild(yeah).appendChild(text);
+                    //quiz.textContent='good';
+                    result.textContent='correct';
+                    result.style.color='#ff1493';
+            })
+          } else {
+             x[i].addEventListener( 'click' , function(){
+                    console.log("wrong");
+                    result.textContent='wrong';
+                    result.style.color='#00bfff';
+            })
+            }
+          }
 
     })();
 </script>

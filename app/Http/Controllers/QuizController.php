@@ -13,8 +13,10 @@ class QuizController extends Controller
     //
 
     public function index(){
-    	$quiz=Quiz::findOrFail(1);
+    	$id=rand(1,2);
+    	$quiz=Quiz::findOrFail($id);
     	return view('quiz.quiz')->with( 'quiz' , $quiz );
-    }
+
+        }
 
 }

@@ -2,29 +2,15 @@
 
 @section('top')
 
-		<div class="bimage" style="opacity: 0.5;  background-image: url('http://greenyouth.dothome.co.kr/wp-content/uploads/2014/10/aa4-1400x500.png'); background-attachment: fixed; width: 1450px; height: 500px;">
+<div class="bc">
+
+		<div class="bimage" style="opacity: 0.5;  background-image: url('https://02mhh4i42s-flywheel.netdna-ssl.com/wp-content/uploads/2000/06/ChrisOutsideMngmt-1400x500.jpg'); background-attachment: fixed; width: 1450px; height: 500px; ">
 </div>
 
 
-
-
-            <p class="hello">
-                <b><font color="#e2041b">S</font>abay tayong mag aral</b><br>
-    			Let's study <font color="#e2041b">T</font>agalog together!<br>
-    			Why am <font color="#e2041b">i</font> studying Tagalog??<br>
-    			<font color="#e2041b">M</font>any people might think it's <font color="#e2041b">u</font>seless...<br>
-    			Yesh it's useless given my career..haha<br>
-    			<font color="#e2041b">B</font>ut I don't care my career <font color="#e2041b">w</font>hen I study language.<br>
-    			I use language <font color="#e2041b">for</font> a communication tool!<br>
-    			<font color="#e2041b">M</font>ag-aral ka <font color="#e2041b">n</font>ang mabuti
-
-
-
-    		</p>
-    	</div>
-
 @endsection
 @section('content')
+
   <!--   <div class="row">
         <div class="col-sm-offset-3 col-sm-3">
         	<h2>what are you gonna do today??</h2>
@@ -61,5 +47,50 @@
 
     </div>
     -->
+
+
+
+
+<p style="position: relative;">
+        <p class="quoto">
+        <br>
+        don't let anyone's ignorance,<br>
+        hate, or negativity<br>
+        stop you from being<br>
+        the best person you can be<br></p>
+
+        <img src="/image/image2.jpg" class="img2">
+
+        <img src="/image/image1.jpg" class="img1">
+
+        <p class="mahal">Nandito lang ako,<br>
+        kapag kailangan mo ng kaibigan,<br>
+        ng makakausap, ng maiiyakan..<br>
+        Sabi ko kasi sayo iwan mo na siya eh..<br>
+        Ano bang nakita mo sa kanya?</p>
+
+        <img src="/image/image3.jpg" class="img3">
+
+        <img src="/image/image4.jpg" class="img4">
+
+        <p class="gusto">Ikaw yung pinakamagandang<br>
+        bagay na dumating sa akin,<br>
+        kaya hinding hindi ko hahayaan<br>
+        na basta basta ka na lang mawawala sakin.</p>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @endsection

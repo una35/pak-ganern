@@ -31,7 +31,6 @@ Route::post('/word/add', 'WordController@add' );
 
 Route::get('/quiz', 'QuizController@index' );
 
-
 Route::get('/dictionary', 'DictionaryController@index' );
 
 Route::get('/dictionary/search', 'DictionaryController@search');

@@ -194,5 +194,77 @@ input[type="text"] {
 }
 
 a{
-        text-decoration: none;
+  text-decoration: none;
     }
+
+#btn{
+    margin-top: 80px;
+}
+
+#result{
+  font-weight:bold;
+}
+
+.img2{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 300px;
+  z-index: 1;
+}
+
+.quoto{
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  border: 7px solid #2f922f;
+  width: 370px;
+  text-align: center;
+  height: 260px;
+  border-radius: 5px;
+  margin-top: 600px;
+  margin-left: 500px;
+  z-index: 3;
+  position: absolute;
+}
+
+.img1{
+  width: 220;
+  height: 220px;
+  position: absolute;
+  margin-top: 950px;
+  margin-left: 80px;
+}
+
+.mahal{
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  text-align: right;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+.img3{
+  width: 340px;
+  height: 220px;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 820px;
+}
+
+.img4{
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  margin-top: 560px;
+  margin-left: 780px;
+}
+
+.gusto{
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 100;
+  margin-top: 1100px;
+  margin-left: -70px;
+}
