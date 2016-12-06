@@ -2,7 +2,10 @@
 
 @section('content')
 
-    <div class="row pt90">
+        <img src="/image/image5.JPG" class="img5">
+
+
+    <div class="row mtt">
     	<div class="col-sm-offset-3 col-sm-6">
     		<p><a href="/note" class="fs15">[back]</a></p>
     		<form action="{{ url('/note', $post->id) }}" method="post">

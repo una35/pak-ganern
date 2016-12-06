@@ -1,10 +1,11 @@
 @extends('layouts.default')
 
 @section('content')
+        <img src="/image/image9.jpg" class="img9">
 
-    <div class="row pl70 mt15">
+    <div class="row pl70 mt">
     	<div class="col-sm-offset-2 col-sm-4">
-    		<u>
+    		<u class="memo">
                 @foreach( $posts as $post )
     			    <a href="/note/{{ $post->id }}"><li class="fs20">{{ $post->title }}</li></a>
                 @endforeach

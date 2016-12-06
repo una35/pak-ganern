@@ -2,15 +2,17 @@
 
 @section('content')
 
-<div class="col-sm-offset-3 col-sm-3">
-        	<h2>what are you gonna do today??</h2>
+        <img src="/image/image7.JPG" class="img6">
+
+        <div class="col-sm-offset-3 col-sm-3">
+        	<h2 style="margin-top: -580px;">what are you gonna do today??</h2>
         	<form action="{{ url('/todo') }}" method="post">
         	    {{ csrf_field() }}
-        		<input type="text" name="todo" placeholder="what are you gonna do today??" style="font-size: 15px;" style="white-space: nowrap;">
-        		<input type="submit" value="add" class="form-inline text-right">
+        		<p><input type="text" name="todo" placeholder="what are you gonna do today??" style="font-size: 15px;" style="white-space: nowrap;">
+        		<input type="submit" value="add" class="form-inline text-right"></p>
         	</form>
 
-       	<ul>
+       	    <ul>
         	    @forelse( $todos as $todo )
         		    <li class="todo">
         		        <font size="5px">{{ $todo->todo }}</font>
@@ -21,5 +23,7 @@
         		@endforelse
         	</ul>
         </div>
+
+            <p class="tamad">abala ka or tamad ka??</p>
 
 @endsection

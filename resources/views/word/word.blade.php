@@ -2,9 +2,11 @@
 
 @section( 'content' )
 
+    <img src="/image/image8.jpg" class="img8">
+
     <div id="card">
-        <div id="card-front">{{ $word->tagalog }}</div>
-        <div id="card-back">{{ $word->english }}</div>
+        <div id="card-front">{{ $word->english }}</div>
+        <div id="card-back">{{ $word->tagalog }}</div>
     </div>
 
 

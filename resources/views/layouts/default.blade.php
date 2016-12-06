@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Molle:400i" rel="stylesheet">
 	<title>Pak ganern!!</title>
     {{Html::script('/js/main.js')}}
 
@@ -26,7 +28,8 @@
         <div class="collapes navbar-collapse target">
         <ul class="non fixed">
                 <li class="nonlist"><a href="/">home</a></li>
-                <li class="nonlist"><a href="http://localhost/translate/index.php">dictionary</a></li>
+                <li class="nonlist"><a href="/dictionary">dictionary</a></li>
+                <li class="nonlist"><a href="http://localhost/translate/index.php">special dictionary</a></li>
                 <li class="nonlist"><a href="/word">word</a></li>
                 <li class="nonlist"><a href="/quiz">quiz</a></li>
                 <li class="nonlist"><a href="{{ url('/note') }}">note</a></li>

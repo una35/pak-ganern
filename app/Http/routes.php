@@ -31,15 +31,11 @@ Route::post('/word/add', 'WordController@add' );
 
 Route::get('/quiz', 'QuizController@index' );
 
-Route::get('/dictionary', 'DictionaryController@index' );
-
-Route::get('/dictionary/search', 'DictionaryController@search');
+Route::get('/dictionary', 'DictionaryController@vi');
 
 Route::get('/note', 'PostController@index' );
 
 Route::post('/note', 'PostController@add' );
-
-Route::post('/dictionary', 'DictionaryController@getsearch' );
 
 Route::get('/note/{id}/destroy', 'PostController@destroy');
 

@@ -2,7 +2,9 @@
 
 @section( 'content' )
 
-<div class="mt15">
+ <img src="/image/image8.jpg" class="img8">
+
+<div class="mt">
     <a href="/word" class="mt15; fs20">[back]</a>
 
 

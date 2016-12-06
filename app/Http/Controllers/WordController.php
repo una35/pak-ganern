@@ -13,9 +13,9 @@ class WordController extends Controller
     //
 
     public function index(){
-    	$id=rand(1,20);
-    	$word=Dictionary::findOrFail($id);
-    	return view('word.word')->with('word' , $word);
+        $id=rand(1,17);
+        $word=Dictionary::findOrFail($id);
+        return view('word.word')->with('word' , $word);
     }
 
     public function add(Request $request){
@@ -25,5 +25,13 @@ class WordController extends Controller
     	$word->save();
     	return view('word.add');
     }
+
+    // public function next(){
+    //     $id=rand(1,20);
+    //     $word=Dictionary::findOrFail($id);
+    //     return redirect('/word')->with('word' , $word);
+    // }
+
+
 
 }
