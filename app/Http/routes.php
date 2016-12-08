@@ -14,7 +14,6 @@
 
 Route::get('/todo', 'TodoController@todo');
 
-
 Route::get('/', 'TodoController@index');
 
 Route::post('/todo', 'TodoController@store');
@@ -27,15 +26,21 @@ Route::get('/word/add', function(){
 	return view( 'word.add' );
 });
 
+Route::get('/note/add', function(){
+	return view( 'note.add' );
+});
+
 Route::post('/word/add', 'WordController@add' );
 
 Route::get('/quiz', 'QuizController@index' );
 
-Route::get('/dictionary', 'DictionaryController@vi');
+Route::get('/next', 'QuizController@next' );
+
+Route::get('/dictionary', 'DictionaryController@index');
 
 Route::get('/note', 'PostController@index' );
 
-Route::post('/note', 'PostController@add' );
+Route::post('/addnew', 'PostController@add' );
 
 Route::get('/note/{id}/destroy', 'PostController@destroy');
 

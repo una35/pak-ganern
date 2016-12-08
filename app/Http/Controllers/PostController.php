@@ -50,7 +50,7 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->body = $request->body;
         $post->save();
-        return redirect('/note');
+        return redirect('/note')->with('flash_message', 'Post Added!');
     }
 
 }

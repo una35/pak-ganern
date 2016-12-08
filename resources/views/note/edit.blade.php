@@ -6,8 +6,8 @@
 
 
     <div class="row mtt">
-    	<div class="col-sm-offset-3 col-sm-6">
-    		<p><a href="/note" class="fs15">[back]</a></p>
+        <div class="col-sm-3"><p><a href="/note" style="font-size: 20px;">[back]</a></p></div>
+    	<div class="col-sm-6" style="margin-top: 60px;">
     		<form action="{{ url('/note', $post->id) }}" method="post">
                 {{ csrf_field() }}
                 {{ method_field('patch') }}

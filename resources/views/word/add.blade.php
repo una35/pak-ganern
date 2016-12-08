@@ -2,10 +2,10 @@
 
 @section( 'content' )
 
- <img src="/image/image8.jpg" class="img8">
+<!--  <img src="/image/image8.jpg" class="img8"> -->
 
-<div class="mt">
-    <a href="/word" class="mt15; fs20">[back]</a>
+<div class="mt15">
+    <a href="/word" class="fs20">[back]</a>
 
 
     <h2>Add new cards!</h2>

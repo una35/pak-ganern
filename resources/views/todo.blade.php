@@ -8,8 +8,8 @@
         	<h2 style="margin-top: -580px;">what are you gonna do today??</h2>
         	<form action="{{ url('/todo') }}" method="post">
         	    {{ csrf_field() }}
-        		<p><input type="text" name="todo" placeholder="what are you gonna do today??" style="font-size: 15px;" style="white-space: nowrap;">
-        		<input type="submit" value="add" class="form-inline text-right"></p>
+        		<input type="text" name="todo" placeholder="what are you gonna do today??" style="font-size: 15px;" style="white-space: nowrap;">
+        		<p><input type="submit" value="add" class="form-inline text-right"></p>
         	</form>
 
        	    <ul>

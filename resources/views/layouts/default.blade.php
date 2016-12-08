@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script|Molle:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans" rel="stylesheet">
 	<title>Pak ganern!!</title>
     {{Html::script('/js/main.js')}}
 
@@ -21,18 +21,18 @@
 
 </style>
 
-<body style="font-family: 'Handlee', cursive;">
+<body style="font-family: 'Josefin Sans', sans-serif;">
 
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="collapes navbar-collapse target">
         <ul class="non fixed">
                 <li class="nonlist"><a href="/">home</a></li>
-                <li class="nonlist"><a href="/dictionary">dictionary</a></li>
-                <li class="nonlist"><a href="http://localhost/translate/index.php">special dictionary</a></li>
+                <!-- <li class="nonlist"><a href="/dictionary">dictionary</a></li> -->
+                <li class="nonlist"><a href="http://localhost/translate/index.php">dictionary</a></li>
                 <li class="nonlist"><a href="/word">word</a></li>
                 <li class="nonlist"><a href="/quiz">quiz</a></li>
-                <li class="nonlist"><a href="{{ url('/note') }}">note</a></li>
+                <li class="nonlist"><a href="{{ url('/note') }}">blog</a></li>
                 <li class="nonlist"><a href="/todo">todo</a></li>
             </ul>
             </div>
@@ -40,6 +40,9 @@
 
 
 </head>
+    @if (session('flash_message'))
+      <div class="flash_message" onclick="this.classList.add('hidden')">{{ session('flash_message') }}</div>
+    @endif
     @yield('top')
     <div class="container same">
     	@yield('content')

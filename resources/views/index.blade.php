@@ -22,7 +22,12 @@
 
         <img src="/image/image2.jpg" class="img2">
 
-        <img src="/image/image1.jpg" class="img1">
+    <a href="#" class="thumnail">
+        <figure>
+            <img src="/image/image1.jpg" style="width: 220; height: 220px;">
+            <figcaption>abay tayong mag aral</figcaption>
+        </figure>
+    </a>
 
         <p class="mahal">Nandito lang ako,<br>
         kapag kailangan mo ng kaibigan,<br>

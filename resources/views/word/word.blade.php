@@ -2,7 +2,7 @@
 
 @section( 'content' )
 
-    <img src="/image/image8.jpg" class="img8">
+   <!--  <img src="/image/image8.jpg" class="img8"> -->
 
     <div id="card">
         <div id="card-front">{{ $word->english }}</div>

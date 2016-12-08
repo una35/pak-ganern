@@ -1,8 +1,8 @@
 <?php
 
-$MicrosoftTranslator = new \App\Libs\MicrosoftTranslator;
+// use App\Dictionary;
 
-//require_once('/App/Libs/MicrosoftTranslator.php');
+// $MicrosoftTranslator = new App\Lib\Dictionary;
 
 if(isset($_GET['submit'])){
 	$text = htmlspecialchars($_GET['basetext']);

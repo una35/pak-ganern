@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libs;
+namespace App\Lib;
 
 class MicrosoftTranslator{
 
@@ -120,7 +120,6 @@ private function getContext()
 
     return $context;
 }
-
 
 
 }
