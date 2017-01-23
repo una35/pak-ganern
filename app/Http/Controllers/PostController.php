@@ -17,7 +17,10 @@ class PostController extends Controller
 
     public function index(){
     	$posts=Post::all();
-    	return view('note.note')->with( 'posts' , $posts );
+        // $posts = Post::paginate();
+        $posts = Post::paginate(5);
+        return view('note.note', compact('posts'));
+    	// return view('note.note')->with( 'posts' , $posts );
         }
 
     public function show($id){
@@ -43,14 +46,6 @@ class PostController extends Controller
         $post->body = $request->body;
         $post->save();
         return redirect('/note');
-    }
-
-    public function add(Request $request){
-    	$post=new Post();
-        $post->title = $request->title;
-        $post->body = $request->body;
-        $post->save();
-        return redirect('/note')->with('flash_message', 'Post Added!');
     }
 
 }

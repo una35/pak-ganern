@@ -1,30 +1,38 @@
-  .non {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-  }
+/*---------default------------------------------------------------*/
+/*body{
+    font-family: 'Josefin Sans', sans-serif;
+}*/
 
-  .nonlist {
-      float: left;
-  }
+.flash_message{
+  text-align: center;
+  padding: 5px;
+  color: #B53663;
+  background: #E3E3E3;
+}
 
-  .nonlist a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 25px;
-      font-family: 'Amatic SC', cursive;
-  }
+.hidden {
+  display: none;
+}
 
-  .nonlist a:hover {
-      background-color: #111;
-      color: red;
-  }
+li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    color: white;
+}
 
+li a: hover {
+    background-color: #B5CDD9;
+    color: red;
+}
+
+.nav{
+  color: red;
+}
+
+/*---------------------------------------------------------------------*/
   .text{
   	font-size: 70px;
   	text-align: center;
@@ -248,14 +256,6 @@
     position: absolute;
   }
 
-  /*.img1{
-    width: 220;
-    height: 220px;
-    position: absolute;
-    margin-top: 950px;
-    margin-left: 80px;
-  }
-*/
   .mahal{
     font-family: 'Caveat', cursive;
     font-size: 25px;
@@ -392,14 +392,3 @@ a:hover>figure figcaption {
 
 
 /*--------------------------------------------------------------------*/
-
-.flash_message{
-  text-align: center;
-  padding: 5px;
-  color: #B53663;
-  background: #E3E3E3;
-}
-
-.hidden {
-  display: none;
-}

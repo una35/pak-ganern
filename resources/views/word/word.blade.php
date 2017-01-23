@@ -5,7 +5,10 @@
    <!--  <img src="/image/image8.jpg" class="img8"> -->
 
     <div id="card">
-        <div id="card-front">{{ $word->english }}</div>
+        <div id="card-front">
+            {{ $word->english }}
+            <span style="position: absolute; margin-left: 40px; margin-top: 30px;">next</span>
+        </div>
         <div id="card-back">{{ $word->tagalog }}</div>
     </div>
 

@@ -11,10 +11,13 @@
 |
 */
 
+Route::auth();
 
 Route::get('/todo', 'TodoController@todo');
 
-Route::get('/', 'TodoController@index');
+Route::get('/main', 'TodoController@index');
+
+Route::get('/home', 'HomeController@index');
 
 Route::post('/todo', 'TodoController@store');
 
@@ -51,6 +54,3 @@ Route::get('/note/{id}/edit', 'PostController@edit');
 Route::get('/note/{id}', 'PostController@show');
 
 Route::get('/{id}', 'TodoController@destroy');
-
-
-

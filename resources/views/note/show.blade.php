@@ -2,13 +2,13 @@
 
 @section('content')
 
-        <img src="/image/image7.JPG" class="img6">
 
-    <div class="row mtt">
-        <div class="col-sm-3 fs20">
-            <p><a href="/note" class="mtt">[back]</a></p>
+
+    <div class="row">
+        <div class="col-sm-2 fs15" style="margin-top: 25px;">
+            <p><a href="/note">[back]</a></p>
         </div>
-    	<div class="col-sm-6">
+    	<div class="col-sm-4" style="background-color: white; width: 500px; margin-top: 10px; padding-bottom: 100px;">
             <br>
             <br>
             <br>
